@@ -108,6 +108,15 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+.font-black {
+font: #000;
+}
+
+.border-white {
+  /* border: border-width border-style border-color */
+  border: 1px solid white
+}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -347,7 +356,7 @@ select,
 optgroup,
 textarea {
   
-  margin-left: -60px;
+  margin-left: -1000px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -3007,7 +3016,7 @@ textarea.form-control-lg {
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.75rem 2.75rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3791,7 +3800,12 @@ textarea.form-control-lg {
 .dropdown-menu.show {
   display: block;
 }
-
+#cabecalho{
+    position: fixed;
+    display:block;
+    top:0;
+    left: 0;
+}
 .dropdown-header {
   display: block;
   padding: 0.5rem 1rem;
@@ -4029,13 +4043,17 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-left: 40rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4053,8 +4071,8 @@ textarea.form-control-lg {
   font-family: 'TITULO';
   padding-top: 1rem;
   padding-bottom: 0.200rem;
-  margin-right: 20rem;
-  margin-left: -18.406rem;
+  margin-right: 80rem;
+  margin-left: -55.406rem;
   font-size: 1.40rem;
   text-decoration: none;
   white-space: nowrap;
@@ -4244,8 +4262,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2.9rem;
-    padding-left: 14.5rem;
+    padding-right:4.9rem;
+    padding-left: -20.5rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -7872,6 +7890,15 @@ textarea.form-control-lg {
   background-color: transparent !important;
 }
 
+.hover-cabecalho:hover{
+  border: 1px solid black;
+  color: #000;
+  background-color: #03989e;
+  
+  transform: scale(1.5); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
 .bg-opacity-10 {
   --bs-bg-opacity: 0.1;
 }
@@ -7895,7 +7922,7 @@ textarea.form-control-lg {
 .bg-wallpaper {
   --bs-bg-opacity: 1;
   background-color: #03989e;
-  padding: 20px;
+  padding: 90px 20px 1px 20px;
 }
 
 
