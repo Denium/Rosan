@@ -4043,17 +4043,17 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 40rem;
+    position: fixed;
+    top: -4px;
+    left: 0px;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: -12.5rem;
+    padding-bottom: -10.5rem;
+    padding-left: 52rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4072,7 +4072,7 @@ textarea.form-control-lg {
   padding-top: 1rem;
   padding-bottom: 0.200rem;
   margin-right: 80rem;
-  margin-left: -55.406rem;
+  margin-left: -54.406rem;
   font-size: 1.40rem;
   text-decoration: none;
   white-space: nowrap;
@@ -4262,8 +4262,12 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right:4.9rem;
-    padding-left: -20.5rem;
+      padding-right: 0.9000000000000057rem;
+      padding-left: -0.5rem;
+      margin-left: -957px;
+      margin-bottom: 5px;
+      margin-top: 6px
+      
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -7891,12 +7895,9 @@ textarea.form-control-lg {
 }
 
 .hover-cabecalho:hover{
-  border: 1px solid black;
   color: #000;
-  background-color: #03989e;
-  
+  background-color: transparent;
   transform: scale(1.5); 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
 
 .bg-opacity-10 {
